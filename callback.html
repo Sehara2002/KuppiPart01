@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Callback Functions</title>
+  </head>
+  <body>
+    <div id="root">
+      <h1 id="text"></h1>
+    </div>
+    <script>
+      const display = (value) => {
+        document.getElementById("text").innerHTML=value;
+      }
+
+      const adder = (x,y,callback)=>{
+        callback(x+y);
+      }
+
+      adder(10,20,display); 
+    </script>
+  </body>
+</html>

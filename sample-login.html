@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Application</title>
+    <style>
+      * {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+
+      .title {
+        text-align: center;
+      }
+      .container {
+        width: 800px;
+        height: 600px;
+        border-radius: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        padding: 20px;
+      }
+      .form-container {
+        width: 400px;
+        height: 400px;
+        margin: 10px auto 10px auto;
+        align-items: center;
+        background-color: aliceblue;
+        border-radius: 20px;
+      }
+      .input-group {
+        width: 300px;
+        height: 80px;
+      }
+
+      form {
+        margin-top: 100px;
+        padding: 20px;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .input-group input {
+        width: 200px;
+        height: 30px;
+        margin-bottom: 20px;
+        background: transparent;
+        border: 0;
+        margin-top: 10px;
+        padding-left: 10px;
+        border-bottom: 1px solid rgb(39, 81, 235);
+      }
+
+      #Mylogin,
+      #cancel {
+        width: 210px;
+        margin-bottom: 20px;
+        height: 40px;
+        border-radius: 20px;
+        font-size: 20px;
+        font-weight: 500;
+        background: white;
+        cursor: pointer;
+        border: 2px solid rgb(39, 81, 235);
+        transition: 0.25s;
+      }
+
+      #Mylogin:hover {
+        background-color: rgb(39, 81, 235);
+        color: white;
+      }
+
+      #cancel:hover {
+        background-color: rgb(251, 15, 15);
+        color: white;
+        border: 2px solid rgb(251, 15, 15);
+      }
+    </style>
+  </head>
+  <body>
+    <script src="login-form.js"></script>
+    <div class="container">
+      <div class="form-container">
+        <form action="" onsubmit="login()">
+          <h1 class="title">Login Here</h1>
+          <div class="input-group">
+            <label for="">Username</label>
+            <br />
+            <input
+              type="text"
+              name="un"
+              id="un"
+              placeholder="Enter your Username"
+            />
+          </div>
+          <div class="input-group">
+            <label for="">Password</label>
+            <br />
+            <input
+              type="password"
+              name="pw"
+              id="pw"
+              placeholder="Enter your Password"
+            />
+          </div>
+
+          <input type="submit" value="Login" id="Mylogin" />
+          <input type="reset" value="cancel" id="cancel" />
+        </form>
+      </div>
+    </div>
+    
+  </body>
+</html>

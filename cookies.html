@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies JS</title>
+</head>
+<body>
+    <script>
+        let time = new Date();
+        time.setTime(time.getTime() + 5000);
+        let cookie_exp = time.toUTCString();
+        document.cookie = "name=Sehara;expires="+cookie_exp+";path=/";
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timing-Sample</title>
+    <style>
+      .my-title {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="my-btn">Click to Stop</button>
+    <div id="container"></div>
+    <script>
+      const myfunc = () => {
+        let para = document.createElement("p");
+        let text = document.createTextNode("Paragraph is added.");
+        para.appendChild(text);
+        document.getElementById("container").appendChild(para);
+      };
+      setInterval(myfunc, 1000);
+    </script>
+  </body>
+</html>

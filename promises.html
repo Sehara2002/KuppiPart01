@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="text"></h1>
+    
+    <script>
+        let promise = new Promise((resolve,reject)=>{
+            let name = prompt("Enter your name: ","");
+            if(name.length>0){
+                resolve(name);
+            }else{
+                reject("Name is Empty");
+            }
+        });
+
+        promise.then((value)=>{
+            window.alert("Name is "+value);
+        },(error)=>{
+            window.alert("Error is "+error);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>JS Tutorial</title>
+    <script src="sample.js"></script>
+    <style>
+        #btn1{
+            cursor:pointer;
+        }
+    </style>
+  </head>
+  <body>
+    <h1 id="topic">This is the topic</h1>
+    <label for="txt1">Number 1:</label>
+    <input type="text" id="txt1">
+    <br><br>
+
+    <label for="txt2">Number 2:</label>
+    <input type="text" id="txt2">
+    <br><br>
+
+    <button id="btn1" onclick="add()">Addition</button>
+    <script>
+ 
+        const add = ()=>{
+            //Get two numbers.
+            let a = document.getElementById("txt1").value;
+            let b = document.getElementById("txt2").value;
+
+            //Get summation of the two numbers.
+            let total = parseInt(a)+parseInt(b);
+
+            //Sum of two numbers should be output.
+            window.alert("Sum of two numbers : "+total);
+        }
+    
+
+    </script>
+  </body>
+</html>
