@@ -25,7 +25,6 @@
     printY();
     echo $x."<br/>";
     echo $y;
-
     ?>
 </body>
 
